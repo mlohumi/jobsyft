@@ -56,6 +56,7 @@ const fetchJobs = async () => {
         location: apiData.locations.map((data) => data.label),
         jdUrl: apiData.staticUrl,
         jobType: apiData.wfhLabel ? apiData.wfhLabel : "WFO",
+        logoPath: apiData.logoPathV3 ? logoPathV3 : "C",
         slug: slug,
       }
       info.push(finalDetails)

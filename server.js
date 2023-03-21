@@ -3,6 +3,15 @@
 naukri.js - default variable values(maybe null) if data from api response is missing
 Implement per page data & lazy load
 
+Protect API routes
+
+- logo
+- cname
+- designation
+- salary
+- location
+- experience
+
 */
 
 /* For Testing
