@@ -48,6 +48,8 @@ const fetchJobs = async () => {
       )
       let finalDetails = {
         jobTitle: apiData.title,
+        education: apiData.education,
+        employmentType: apiData.employmentType,
         jobDescription: apiData.description,
         companyName: apiData.companyDetail.name,
         skills: prefKeyskills.concat(otherkeyskills),

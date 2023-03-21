@@ -38,6 +38,12 @@ const jobSchema = new mongoose.Schema(
     slug: {
       type: String,
     },
+    education: {
+      type: String,
+    },
+    employmentType: {
+      type: String,
+    },
   },
   { timestamps: { createdAt: true, updatedAt: true }, versionKey: false }
 )
