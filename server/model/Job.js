@@ -39,7 +39,7 @@ const jobSchema = new mongoose.Schema(
       type: String,
     },
     education: {
-      type: String,
+      type: Object,
     },
     employmentType: {
       type: String,
