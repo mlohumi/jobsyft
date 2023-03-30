@@ -71,14 +71,14 @@ const fetchJobs = async () => {
   }
 }
 
-// ;(async () => {
-//   console.log("MUKESH LOHUMI")
-//   await fetchJobs()
-// })()
+;(async () => {
+  console.log("MUKESH LOHUMI")
+  await fetchJobs()
+})()
 
 // Define a cron job that runs the fetchJobs function every 5 minutes
-// const cron = require("node-cron")
+const cron = require("node-cron")
 
-// cron.schedule("*/1 * * * *", async () => {
-//   await fetchJobs()
-// })
+cron.schedule("0 0 * * *", async () => {
+  await fetchJobs()
+})

@@ -21,7 +21,6 @@ const getJobs = async (req, res) => {
       .select(
         "jobTitle companyName location salary experience logoPath slug createdAt"
       )
-    // const {}
     res.status(200).json(jobs)
   } catch (error) {
     res.status(500).json({ error: error.message })
